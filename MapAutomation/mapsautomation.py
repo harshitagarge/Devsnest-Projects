@@ -1,11 +1,13 @@
+# importing required modules
 from selenium import webdriver
 from time import sleep
-driver = webdriver.Chrome("/Users/Harshita/Downloads/chromedriver_win32")
 
+# assigning url in the webdriver object
+driver = webdriver.Chrome("/Users/Harshita/Downloads/chromedriver_win32")
 driver.get("https://www.google.com/maps/@18.5841853,73.9841559,15z")
 sleep(2)
 
-
+# searching locations
 def searchplace():
     Place = driver.find_element_by_class_name("tactile-searchbox-input")
     Place.send_keys("Mumbai")
@@ -14,7 +16,7 @@ def searchplace():
     Submit.click()
 searchplace()
 
-
+#getting directions
 def directions():
     sleep(10)
     directions = driver.find_element_by_xpath(
@@ -22,7 +24,7 @@ def directions():
     directions.click()
 directions()
 
-
+#finding place
 def find():
     sleep(6)
     find = driver.find_element_by_xpath(
@@ -34,7 +36,7 @@ def find():
     search.click()
 find()
 
-
+# get transportation details: Total Kilometers
 def kilometers():
     sleep(5)
     Totalkilometers = driver.find_element_by_xpath(
