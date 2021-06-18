@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+}
+.header {
+    display: flex;
+    justify-content: center;
+}
+.background-img {
+    width: 100%;
+    margin: 0;
+    height: 700px;
+    z-index: -1;
+    position: absolute;
+}
+.body {
+    
+    border: 3px solid black; 
+    padding: 20px; 
+    margin-left: 200px; 
+    margin-right: 200px;
+    background: linear-gradient(to bottom, #ccffff 0%, #ffffff 100%);
+    position: relative;
+    top: 50px;
+}
+
+img {
+    width: 80px;
+}
