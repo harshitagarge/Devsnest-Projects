@@ -1,0 +1,47 @@
+body {
+    background: url(https://i.pinimg.com/564x/7b/be/fd/7bbefdb442f165e9f06e2ee586c9bf52.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: contain;
+}
+.container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+    width: 100vw;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    font-size: 3rem;
+    margin: 15px;
+    
+}
+
+.board {
+    margin-bottom: 90px;
+    padding: 30px;
+    background-color: #C7FFD8;
+    box-shadow: 10px 10px 8px #888888;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.seats-value {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #A3DDCB;
+    margin-left: 500px;
+    margin-right: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.head {
+    text-align: center;
+}
