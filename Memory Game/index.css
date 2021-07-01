@@ -1,0 +1,89 @@
+body {
+    height: 100vh;
+    background-color: white;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaNPqWh6CAQagaWoQo4Up6c5sojinJyYNCDA&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: contain;
+}
+
+.score-card {
+    border-radius: 20px;
+    margin-left: 500px;
+    margin-right: 500px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    /* font-weight: bold; */
+}
+.moves {
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: #231E23;
+    color: white;
+    padding: 10px;
+}
+.move:active {
+    transform: scale(.97);
+}
+.score {
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: #231E23;
+    color: white;
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 5px;
+}
+
+.memory-game {
+    /* border: 5px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    height:500px;
+    width: 500px;
+    margin: 30px auto;
+    perspective: 1000px;
+    background: url(data:image/jpeg;base64,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);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: contain;
+    /* background-color: black; */
+
+}
+.memory-card {
+    /* border: 2px solid black; */
+    width: calc(25% - 10px);
+    height: calc(33.33% - 10px);
+    margin: 5px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .8s;
+}
+
+.memory-card:active {
+    transform: scale(.97);
+}
+
+.front-face, .back-face {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.flip {
+    transform: rotateY(180deg);
+}
+.front-face {
+    transform: rotateY(180deg);
+}
+/* img {
+    width: 150px;
+    height: 200px;
+}  */
